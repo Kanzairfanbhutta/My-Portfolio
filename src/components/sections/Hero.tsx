@@ -5,29 +5,31 @@ import { motion } from "framer-motion";
 import { MapPin, ArrowRight, Award, Briefcase, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SplitText } from "@/components/react-bits/SplitText";
-import { Lightfall } from "@/components/react-bits/Lightfall";
+import { PixelBlast } from "@/components/react-bits/PixelBlast";
 
 export function Hero() {
   return (
     <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden py-10 md:py-14">
-      {/* Lightfall Effect Background - positioned at z-0 */}
+      {/* PixelBlast Effect Background - positioned at z-0 */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <Lightfall
-          colors={['#0ea5e9', '#38bdf8', '#0284c7', '#0369a1']}
-          backgroundColor="#090d16"
-          speed={0.4}
-          streakCount={4}
-          streakWidth={1.5}
-          streakLength={1.5}
-          glow={1}
-          density={0.5}
-          twinkle={0.8}
-          zoom={2.5}
-          backgroundGlow={0.3}
-          opacity={0.8}
-          mouseInteraction={true}
-          mouseStrength={0.8}
-          mouseRadius={0.7}
+        <PixelBlast
+          variant="circle"
+          pixelSize={6}
+          color="#38bdf8"
+          patternScale={3}
+          patternDensity={1.2}
+          pixelSizeJitter={0.5}
+          enableRipples
+          rippleSpeed={0.4}
+          rippleThickness={0.12}
+          rippleIntensityScale={1.5}
+          liquid
+          liquidStrength={0.12}
+          liquidRadius={1.2}
+          liquidWobbleSpeed={5}
+          speed={0.6}
+          edgeFade={0.25}
+          transparent
         />
       </div>
 
@@ -118,4 +120,5 @@ export function Hero() {
     </section>
   );
 }
+
 export default Hero;
