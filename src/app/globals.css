@@ -5,69 +5,71 @@
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
-  
+
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
-  
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  
+
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  
+
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-  
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  
+
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
-  
+
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
 :root {
-  --background: hsl(222.2 84% 4.9%); /* Deepest slate/navy blue */
+  --background: hsl(222.2 84% 4.9%);
+  /* Deepest slate/navy blue */
   --foreground: hsl(210 40% 98%);
-  
+
   --card: hsl(222.2 84% 6.5%);
   --card-foreground: hsl(210 40% 98%);
-  
+
   --popover: hsl(222.2 84% 4.9%);
   --popover-foreground: hsl(210 40% 98%);
-  
+
   --primary: hsl(210 40% 98%);
   --primary-foreground: hsl(222.2 47.4% 11.2%);
-  
+
   --secondary: hsl(217.2 32.6% 14%);
   --secondary-foreground: hsl(210 40% 98%);
-  
+
   --muted: hsl(217.2 32.6% 12%);
   --muted-foreground: hsl(215 20.2% 65%);
-  
-  --accent: hsl(199 89% 48%); /* Radiant Steel Blue / Teal */
+
+  --accent: hsl(199 89% 48%);
+  /* Radiant Steel Blue / Teal */
   --accent-foreground: hsl(222.2 47.4% 11.2%);
-  
+
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(210 40% 98%);
-  
+
   --border: hsl(217.2 32.6% 15%);
   --input: hsl(217.2 32.6% 15%);
   --ring: hsl(224.3 76.3% 48%);
-  
+
   --radius: 0.75rem;
 }
 
@@ -90,20 +92,26 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
 ::-webkit-scrollbar-thumb {
   background: hsl(215.4 16.3% 44% / 0.3);
   border-radius: 4px;
 }
+
 .dark ::-webkit-scrollbar-thumb {
   background: hsl(215 20.2% 65% / 0.3);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(215.4 16.3% 44% / 0.5);
 }
 
-a, button, [role="button"] {
+a,
+button,
+[role="button"] {
   cursor: pointer !important;
 }
