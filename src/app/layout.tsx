@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
   title: "Kanza I. Bhutta - CHRP | Senior Talent Acquisition Lead Portfolio",
   description: "Professional portfolio of Kanza I. Bhutta - CHRP, Senior Talent Acquisition Lead & HR Professional specializing in C-Suite recruitment, HRBP, and IT/SaaS talent acquisition.",
